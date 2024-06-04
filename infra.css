@@ -15,6 +15,9 @@ nav {
     width: 100%;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
@@ -27,8 +30,24 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu-links {
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.menu-links a {
+    margin: 0 15px;
+}
+
 .container {
-    padding: 80px 20px 20px; /* Adjusted for fixed nav */
+    padding: 100px 20px 20px; 
     max-width: 1200px;
     margin: 0 auto;
     background: white;
@@ -86,7 +105,6 @@ footer p {
     max-width: 300px;
     flex: 1 1 300px;
     margin-top: 80px;
-    
 }
 
 label {
@@ -117,9 +135,25 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
-    nav a {
+    .menu-icon {
         display: block;
+    }
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-links a {
         margin: 10px 0;
+        padding: 10px;
+    }
+
+    .menu-links.active {
+        display: flex;
     }
 
     .characters {
@@ -143,12 +177,11 @@ input[type="submit"]:hover {
     }
 
     .container {
-        padding: 60px 20px 20px; 
+        padding: 100px 20px 20px; 
     }
 }
 
 header {
-    background: url('images/hero.jpg') no-repeat center center/cover;
     color: white;
     height: 300px;
     display: flex;
@@ -215,9 +248,4 @@ header h1 {
     gap: 300px;
     margin-bottom: 20px;
     width: 575px;
-}
-.mapy{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
 }
