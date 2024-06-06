@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="infra.css">
+    <link rel="icon" href="logo_infra.png">
+    <script src="infra.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-links">
+            <a href="index.html">Úvod</a>
+            <a href="příběh.html">Příběh hry</a>
+            <a href="lokace.html">Lokace</a>
+            <a href="postavy.html">Postavy</a>
+            <a href="hodnocení.html">Hodnocení</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Dotazník</h2>
+        <form action="mailto:maty.haas@seznam.cz" method="post" enctype="text/plain">
+            <label for="name">Jméno:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="age">Věk:</label><br>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="gender">Pohlaví:</label><br>
+            <select id="gender" name="gender" required>
+                <option value="">Vyberte...</option>
+                <option value="male">Muž</option>
+                <option value="female">Žena</option>
+                <option value="other">Jiné</option>
+            </select><br><br>
+
+            <label for="platform">Na které platformě hrajete Infra?</label><br>
+            <select id="platform" name="platform" required>
+                <option value="">Vyberte...</option>
+                <option value="pc">PC</option>
+                <option value="console">Konzole</option>
+                <option value="other">Jiné</option>
+            </select><br><br>
+
+            <label for="rating">Jak byste ohodnotili hru Infra?</label><br>
+            <input type="radio" id="rating1" name="rating" value="1" required> 1<br>
+            <input type="radio" id="rating2" name="rating" value="2"> 2<br>
+            <input type="radio" id="rating3" name="rating" value="3"> 3<br>
+            <input type="radio" id="rating4" name="rating" value="4"> 4<br>
+            <input type="radio" id="rating5" name="rating" value="5"> 5<br><br>
+
+            <label for="feedback">Jaký je váš názor na hru Infra?</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="newsletter">Chcete se přihlásit k odběru našeho newsletteru?</label>
+            <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+
+            <input type="submit" value="Odeslat">
+        </form>
+        <section class="zdroje">
+            <h3>Zdroje</h3>
+            <a href="https://stalburg.net/Main_Page">stalburg wiki</a><br>
+            <a href="https://en.wikipedia.org/wiki/Infra_(video_game)">infra wikipedia</a><br>
+            <br>
+        </section>
+
+
+    </div>
+    <footer>
+        &copy; 2024 Infra Fan Page
+    </footer>
+</body>
+</html>
