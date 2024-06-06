@@ -162,6 +162,7 @@ input[type="submit"]:hover {
 
     .images {
         flex-direction: column;
+        
     }
 
     .images img {
