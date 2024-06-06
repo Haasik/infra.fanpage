@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu-links {
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.menu-links a {
+    margin: 0 15px;
+}
+
+.container {
+    padding: 100px 20px 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.character {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 300px;
+    margin-top: 80px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-links a {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .menu-links.active {
+        display: flex;
+    }
+
+    .characters {
+        flex-direction: column;
+    }
+
+    .images {
+        flex-direction: column;
+        
+    }
+
+    .images img {
+        width: 100%;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 100px 20px 20px; 
+    }
+}
+
+header {
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#topnav {
+    overflow: hidden;
+}
+
+#topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#topnav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#topnav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.lokace {
+    text-align: center;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 300px;
+    margin-top: 80px;
+}
+
+.lokace h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.lokace img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+.mapy{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.story p {
+    text-align: justify;
+}
+
+.images {
+    margin-left: 15px;
+    display: flex;
+    gap: 300px;
+    margin-bottom: 20px;
+    width: 575px;
+}
+section > a{
+text-decoration: none;
+color: #333;
+}
+.odkaz{
+    text-decoration: none;
+color: #333;
+}
