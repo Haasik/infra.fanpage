@@ -283,10 +283,6 @@ header h1 {
     margin-bottom: 20px;
     width: 575px;
 }
-section > a{
-text-decoration: none;
-color: #333;
-}
 .odkaz{
     text-decoration: none;
 color: #333;
