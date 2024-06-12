@@ -294,3 +294,7 @@ header h1 {
     flex: 1 1 300px;
     margin-top: 80px;
 }
+.odkaz{
+    text-decoration: none;
+color: #333;
+}
